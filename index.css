@@ -456,6 +456,8 @@ label input {
   text-align: right;
 }
 
-.view-cap, .view-container-border { background-color:black; }
-.mv-daynames-table { color: black; background:white; }
-.mv-event-container { border-top:1px solid black; }
+@media (prefers-color-scheme: dark) {
+  iframe {
+      filter: invert(1);
+  }
+}
