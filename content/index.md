@@ -1,5 +1,5 @@
 ---
-title: Texas A&M Linux User Group
+title: TAMULUG
 subtitle: The Linux User Group at Texas A&M University
 date: 2026-02-16
 lang: en
