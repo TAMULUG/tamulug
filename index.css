@@ -456,8 +456,48 @@ label input {
   text-align: right;
 }
 
-@media (prefers-color-scheme: dark) {
-  iframe {
-      filter: invert(1);
-  }
+/* Calendar */
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-nav > * + * {
+  margin-top: 0;
+}
+
+.calendar-grid {
+  table-layout: fixed;
+}
+
+.calendar-grid th,
+.calendar-grid td {
+  text-align: center;
+}
+
+.calendar-grid td {
+  cursor: pointer;
+}
+
+.calendar-grid td:hover {
+  background: var(--background-color-alt);
+}
+
+.calendar-grid td.today {
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-decoration-thickness: var(--border-thickness);
+  text-underline-offset: 3px;
+}
+
+.calendar-grid td.has-event {
+  background: var(--background-color-alt);
+  font-weight: var(--font-weight-bold);
+}
+
+.calendar-grid td.selected {
+  background: var(--text-color);
+  color: var(--background-color);
 }

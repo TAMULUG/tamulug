@@ -1,6 +1,6 @@
 CONTENT_DIR := content
 OUT_DIR := out
-STATIC_FILES := index.css reset.css index.js template.html
+STATIC_FILES := index.css reset.css index.js calendar.js template.html
 
 MD_FILES := $(shell find $(CONTENT_DIR) -name '*.md')
 HTML_FILES := $(patsubst $(CONTENT_DIR)/%.md,$(OUT_DIR)/%.html,$(MD_FILES))
